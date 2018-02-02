@@ -1,5 +1,5 @@
 
-## At a glance ##
+## Tutorial ##
 A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian Sampson's "LLVM for Grad Students"
 
 ## Setup ##
@@ -10,7 +10,7 @@ and code transformation tools. We consider in this tutorial:
 - Building a trivial out-of-source LLVM pass.
 
 We will be building LLVM v`5.0.0`.
-We assume that you have a working compiler toolchain (GCC or LLVM) and that CMake is installed (minimum version 3.4.3).
+We assume that you have a working compiler toolchain (GCC or LLVM) and that CMake is installed (minimum version `3.4.3`).
 
 ## Building a trivial LLVM pass ##
 
