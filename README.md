@@ -13,7 +13,7 @@ $ docker build -t cs255-llvm-image /PATH/TO/THE/DOCKERFILE
 $ docker run -it -v $PWD/DIRNAME/ADD/TO/CONTAINER://DIRNAME/ADD/TO/CONTAINER --name cs255-llvm cs255-llvm-image /bin/bash
 ```
 
-## Common Docker Command
+## Usefule Docker Command
 
 ### List all the image
 ```[Shell]
