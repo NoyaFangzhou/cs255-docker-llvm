@@ -1,0 +1,5 @@
+/llvm-pass-tutorial/build/CMakeFiles/edit_cache.dir
+/llvm-pass-tutorial/build/CMakeFiles/rebuild_cache.dir
+/llvm-pass-tutorial/build/lib/CMakeFiles/edit_cache.dir
+/llvm-pass-tutorial/build/lib/CMakeFiles/rebuild_cache.dir
+/llvm-pass-tutorial/build/lib/CMakeFiles/InstCounterPass.dir

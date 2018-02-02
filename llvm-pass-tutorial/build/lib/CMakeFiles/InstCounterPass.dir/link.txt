@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared  -o libInstCounterPass.so CMakeFiles/InstCounterPass.dir/InstCounter.cpp.o  -L/LLVM_ROOT/build/./lib 
