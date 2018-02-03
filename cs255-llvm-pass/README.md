@@ -12,21 +12,21 @@ A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian 
   
   Go to the cs255-llvm-pass directory
   ```bash
-  cd cs255-llvm-pass/
+  $ cd cs255-llvm-pass/
   ```
 
 - <b>STEP 2</b>
 
   Create a directory named build
   ```bash
-  mkdir build
+  $ mkdir build
   ```
 
 - <b>STEP 3</b>
  
   Build the LLVM Function Pass Template via cmake
   ```bash
-  cmake ..
+  $ cmake ..
   ```
 
 To test whether you build success or not, please `cd` to the `test` directory and type `make check` in the command line.
