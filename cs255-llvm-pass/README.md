@@ -50,7 +50,7 @@ test.o: In function `main':
 test.bc.opt:(.text+0x53): warning: the `gets' function is dangerous and should not be used.
 ```
 
-## Building a trivial LLVM pass ##
+## Build a trivial LLVM pass ##
 After finish implementing your function pass, you can rebuild your function pass by repeating the procedure introduced in the previous session. Also, if you want to see what the IR code looks like, you can type `make ir` in the `test` directory. Then, you'll see `test.bc.opt.ll, test.ll` file in the directory. These file contains the human readable IR code for your test program. 
 
 Besides, type `make clean` in command line can remove all intermediate files and binary files for the test program.
