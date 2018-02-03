@@ -4,10 +4,10 @@ A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian 
 
 - <b>STEP 0</b>
 
-  Correctly build your docker image. Run your docker and launch the docker image `cs255-llvm-image`
+  Correctly pull your docker image from the Docker Hub, or build it by dockerfile. 
   
-  git clone this repository and put it on the root directory **(OTHERWISE you have to modify the CMakefile!!!)**
-
+ 
+(After run the docker container)
 - <b>STEP 1</b>
   
   Go to the cs255-llvm-pass directory
