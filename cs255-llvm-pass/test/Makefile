@@ -23,8 +23,9 @@ check: test.c
 	$(LLC) -filetype=obj test.bc.opt -o test.o
 	$(CC) test.o $(RT)/libInstCounting_rt.a -o test
 
-ir:	test.bc.opt
+ir:	test.bc.opt test.bc
 	$(DIS) test.bc.opt
+	$(DIS) tests.bc
 
 clean:
 	rm -f *.bc *.opt *.o *.ll test
