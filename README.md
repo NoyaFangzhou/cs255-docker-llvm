@@ -4,13 +4,11 @@ This repositorary is designed for <b>2018 Spring - [CS255/455 Software Analysis 
 Here is the official guide about how to install docker on different operating systems. [Install Docker](https://docs.docker.com/install/)
 
 
-### Build the image from the Dockerfile ###
+### Build the image ###
 ```bash
 $ docker build -t cs255-llvm-image /PATH/TO/THE/DOCKERFILE
-```
 
-### Download the image from the Docker Hub ###
-```bash
+# Also, you can directly pull the image from Docker Hub
 $ docker pull noyafangzhou/cs255-llvm-image
 ```
 
