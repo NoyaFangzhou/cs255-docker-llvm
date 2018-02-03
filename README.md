@@ -1,5 +1,5 @@
 # cs255-docker-llvm #
-This repositorary contains the docker with Ubuntu `16.04` and LLVM/Clang `3.9.1`.
+This repositorary is designed for <b>2018 Spring - [CS255/455 Software Analysis and Improvments](https://roclocality.org/2018/01/11/cs-255-455-spring-2018/)</b> LLVM Project. It contains the docker with Ubuntu `16.04` and LLVM/Clang `3.9.1`. 
 
 Here is the official guid about how to install docker on different operating systems. [Install Docker](https://docs.docker.com/install/)
 
@@ -20,7 +20,6 @@ $ docker run -it -v $PWD/DIRNAME/ADD/TO/CONTAINER://DIRNAME/ADD/TO/CONTAINER --n
 ```
 
 ### Usefule Docker Command ###
-
 ```bash
 # List all the image
 $ docker image ls
@@ -32,7 +31,6 @@ $ docker ps -a
 $ exit
 
 # Restart the container after quit
-
 $ docker start -ai #{CONTAINER_NAME}
 
 # Remove the image
