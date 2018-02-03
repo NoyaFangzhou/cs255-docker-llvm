@@ -11,7 +11,7 @@ $ docker build -t cs255-llvm-image /PATH/TO/THE/DOCKERFILE
 
 ### Download the image from the Docker Hub ###
 ```bash
-$ docker pull noyafangzhou/cs255-llvm
+$ docker pull noyafangzhou/cs255-llvm-image
 ```
 
 ### Run the image ###
