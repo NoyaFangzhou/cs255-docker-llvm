@@ -8,7 +8,7 @@ Here is the official guide about how to install docker on different operating sy
 ```bash
 $ docker build -t cs255-llvm-image /PATH/TO/THE/DOCKERFILE
 
-# Also, you can directly pull the image from Docker Hub
+# Or, you can directly pull the image from Docker Hub
 $ docker pull noyafangzhou/cs255-llvm-image
 ```
 
