@@ -1,5 +1,5 @@
-# Use the Ubuntu+llvm Dockerfile from UCSD (llvm 5.0.1)
-FROM prodromou87/llvm:5.0.1
+# Use the Ubuntu+llvm Dockerfile from UCSD (llvm 3.9.1)
+FROM prodromou87/llvm:3.9.1
 
 MAINTAINER Fangzhou Liu <noyafangzhou.ark@gmail.com>
 
