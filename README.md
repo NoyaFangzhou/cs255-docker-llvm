@@ -38,7 +38,7 @@ $ docker rmi #{IMAGE_NAME}
 # Remove the container
 $ docker container rm #{CONTAINER_NAME}
 
-# Remove the <none> tag iamge
+# Remove the <none> tag image
 $ docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 ```
 For more information about the Docker Command, please check [Docker Command](https://docs.docker.com/engine/reference/builder/#usage)
