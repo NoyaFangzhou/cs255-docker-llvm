@@ -1,5 +1,5 @@
 # cs255-docker-llvm #
-This repositorary contains the docker with Ubuntu `16.04` and LLVM/Clang `5.0.0`.
+This repositorary contains the docker with Ubuntu `16.04` and LLVM/Clang `3.9.1`.
 
 Here is the official guid about how to install docker on different operating systems. [Install Docker](https://docs.docker.com/install/)
 
