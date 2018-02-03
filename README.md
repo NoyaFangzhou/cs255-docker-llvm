@@ -15,8 +15,9 @@ $ docker pull noyafangzhou/cs255-llvm-image
 ```
 
 ### Run the image ###
+Notes that the cs255-llvm-pass is the directory contains the code template. You have to clone it first and then add it to the docker container. 
 ```bash
-$ docker run -it -v $PWD/DIRNAME/ADD/TO/CONTAINER://DIRNAME/ADD/TO/CONTAINER --name cs255-llvm cs255-llvm-image /bin/bash
+$ docker run -it -v $PWD/cs255-llvm-pass:/cs255-llvm-pass --name cs255-llvm cs255-llvm-image /bin/bash
 ```
 
 ### Usefule Docker Command ###
