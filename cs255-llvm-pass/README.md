@@ -24,11 +24,14 @@ A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian 
 
 - <b>STEP 3</b>
  
-  Build the LLVM Function Pass Template via cmake
+  Under the build directory, build the LLVM Function Pass Template via cmake
   ```bash
   $ cmake ..
+  
+  # After cmake success
+  $ make
   ```
-
+  
 To test whether you build success or not, please `cd` to the `test` directory and type `make check` in the command line.
 If you build your pass template correct, you'll see the following output:
 ```bash
