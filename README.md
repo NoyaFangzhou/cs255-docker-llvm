@@ -13,10 +13,15 @@ $ docker pull noyafangzhou/cs255-llvm-image
 ```
 
 ### Run the image ###
-Notes that the `cs255-llvm-pass` is the directory that contains the code template. You have to clone it first and then add it to the docker container using the following command. Also, Capital Letters **CANNOT** appear on the path to `cs255-llvm-pass` directory.
+Notes that the `cs255-llvm-loop` is the directory that contains the code template. You have to clone it first and then add it to the docker container using the following command. Also, Capital Letters **CANNOT** appear on the path to `cs255-llvm-pass` directory.
 ```bash
-$ docker run -it -v $PWD/cs255-llvm-pass:/cs255-llvm-pass --name cs255-llvm cs255-llvm-image /bin/bash
+# build docker image through Dockerfile
+$ docker run -it -v $PWD/cs255-llvm-loop:/cs255-llvm-loop --name cs255-llvm cs255-llvm-image /bin/bash
+
+# push docker image through docker hub
+$ docker run -it -v $PWD/cs255-llvm-loop:/cs255-llvm-loop --name cs255-llvm noyafangzhou/cs255-llvm-image /bin/bash
 ```
+Notes that you should type the previous command under the path that contains the cs255-llvm-loop dir.
 
 
 ### Usefule Docker Command ###
