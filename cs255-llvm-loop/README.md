@@ -12,7 +12,7 @@ A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian 
   
   Go to the cs255-llvm-pass directory
   ```bash
-  $ cd cs255-llvm-pass/
+  $ cd cs255-llvm-loop/
   ```
 
 - <b>STEP 2</b>
