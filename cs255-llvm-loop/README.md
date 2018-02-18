@@ -33,30 +33,13 @@ A step-by-step tutorial for building an out-of-source LLVM pass based on Adrian 
   ```
   
 To test whether you build success or not, please `cd` to the `test` directory and type `make check` in the command line.
-If you build your pass template correct, you'll see the following output:
-```bash
-/LLVM_ROOT/build/bin/clang -O0 -c -emit-llvm test.c -o test.bc
-test.c:9:4: warning: implicit declaration of function 'gets' is invalid in C99
-      [-Wimplicit-function-declaration]
-   gets(str);
-   ^
-1 warning generated.
-/LLVM_ROOT/build/bin/opt -load ../build/lib/libInstCounterPass.so -inst-count <test.bc> test.bc.opt
-Function: main
-	No. 0 bb: 12 statements.
-	No. 1 bb: 4 statements.
-	No. 2 bb: 25 statements.
-	No. 3 bb: 3 statements.
-/LLVM_ROOT/build/bin/llc -filetype=obj test.bc.opt -o test.o
-/LLVM_ROOT/build/bin/clang test.o ../build/runtime/libInstCounting_rt.a -o test
-test.o: In function `main':
-test.bc.opt:(.text+0x53): warning: the `gets' function is dangerous and should not be used.
-```
 
-## Build a trivial LLVM pass ##
-After finish implementing your function pass, you can rebuild your function pass by repeating the procedure introduced in the previous session. Also, if you want to see what the IR code looks like, you can type `make ir` in the `test` directory. Then, you'll see `test.bc.opt.ll` file in the directory. These file contains the human readable IR code for your test program. 
+## Build a LLVM pass ##
+After finish implementing your function pass, you can rebuild your function pass by repeating the procedure introduced in the previous session(JUST type `make` under build directory is fine). Also, if you want to see what the IR code looks like, you can type `make ir` in the `test` directory. Then, you'll see `test.bc.opt.ll` file in the directory. These file contains the human readable IR code for your test program. 
 
 Besides, type `make clean` in command line can remove all intermediate files and binary files for the test program.
+
+In this assignment, you only have to deal with nature loops. However, in the test file, I also prepare a program(5-point stencil) contains nested loops. If you want to have a try on nested loops, you can type `make adv` under test directory to see whether your compiler pass works.
 
 ### Useful resources
 This tutorial is based on the following resources
