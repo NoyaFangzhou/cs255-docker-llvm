@@ -17,8 +17,14 @@ check: test.c
 	$(CC) -O0 -c -emit-llvm test.c -o test.bc
 	$(OPT) -load ../Debug+Asserts/lib/libLLVMInstCnt.so -nloop <test.bc> test.bc.opt
 
+
+hard: hard.c
+	$(CC) -O0 -c -emit-llvm hard.c -o hard.bc
+	$(OPT) -load ../Debug+Asserts/lib/libLLVMInstCnt.so -nloop <hard.bc> hard.bc.opt
+
 ir:
 	$(DIS) test.bc.opt
+	$(DIS) hard.bc.opt
 clean:
-	rm -f *.bc *.opt *.o test
+	rm -f *.bc *.opt *.o *.ll
 
