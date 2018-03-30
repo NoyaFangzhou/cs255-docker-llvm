@@ -24,7 +24,7 @@ void hardbench(int* a, int* b, int* c) {
 
    for (k = 2; k < NC; ++k)
    {
-      c[k] = a[k*2-3] + b[k-1];
+      c[k] = c[k*2-3] + b[k-1];
    }
 
 }
