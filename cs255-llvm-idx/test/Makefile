@@ -13,18 +13,23 @@ LLC= $(LLVM_BIN_DIR)/llc
 CC= $(CLANG_BIN_DIR)/clang
 DIS= $(LLVM_BIN_DIR)/llvm-dis
 
+benchmark: case_a case_b case_c case_d case_e case_f hard 
+
 check: test.c
 	$(CC) -O0 -c -emit-llvm test.c -o test.bc
 	$(OPT) -load ../Debug+Asserts/lib/libLLVMInstCnt.so -nloop <test.bc> test.bc.opt
 
+all:
+	$(foreach prog, $(benchmark), $(CC) -O0 -c -emit-llvm $(prog).c -o $(prog).bc ;)
+	$(foreach prog, $(benchmark), $(OPT) -load ../Debug+Asserts/lib/libLLVMInstCnt.so -nloop <$(prog).bc> $(prog).bc.opt ;)
 
 hard: hard.c
 	$(CC) -O0 -c -emit-llvm hard.c -o hard.bc
 	$(OPT) -load ../Debug+Asserts/lib/libLLVMInstCnt.so -nloop <hard.bc> hard.bc.opt
 
 ir:
-	$(DIS) test.bc.opt
-	$(DIS) hard.bc.opt
+	$(foreach prog, $(benchmark), $(DIS) $(prog).bc.opt ;)
+
 clean:
 	rm -f *.bc *.opt *.o *.ll
 
