@@ -95,4 +95,4 @@ namespace {
 }
 
 char InstCounter::ID = 0;
-static RegisterPass<NatLoop> X("nloop", "Nature Loop Detector");
+static RegisterPass<InstCounter> X("nloop", "Nature Loop Detector");
