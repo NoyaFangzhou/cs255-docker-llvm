@@ -2,7 +2,7 @@
 #define NB 100
 #define NC  48
 
-void case(int* a, int* b) {
+void test(int* a, int* b) {
 	
    int i, j = 0;
 

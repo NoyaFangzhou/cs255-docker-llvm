@@ -2,7 +2,7 @@
 #define NB 100
 #define NC  48
 
-void case(int* a) {
+void test(int* a) {
    int temp, last;
    int i = 0;
 
