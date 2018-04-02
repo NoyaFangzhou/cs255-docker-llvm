@@ -2,7 +2,9 @@
 #define NB 100
 #define NC  48
 
-void test(int* a, int* b, int* c) {
+void test(int* c) {
+
+   int c[NA];
 
    int n = NA;
 

@@ -2,14 +2,15 @@
 #define NB 100
 #define NC  48
 
-void test(int* a, int* b) {
-	
-   int i, j = 0;
+void test() {
 
-   for (i = 0; i < NA; ++i)
-   {
-   	  j = i;
-      b[i] = -a[j];
-   }
+	int a[NA], b[NB];
+	int i, j = 0;
+
+	for (i = 0; i < NA; ++i)
+	{
+		j = i;
+		b[i] = -a[j];
+	}
 
 }

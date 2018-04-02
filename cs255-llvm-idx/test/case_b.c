@@ -2,13 +2,14 @@
 #define NB 100
 #define NC  48
 
-void test(int* a, int* b) {
+void test() {
 	
-   int i, j = 0;
+	int a[NA];
+	int i, j = 0;
 
-   for (i = 0; i < NA; ++i)
-   {
-      j = 2 * i + 1;
-   }
+	for (i = 0; i < NA; ++i)
+	{
+	  j = 2 * i + 1;
+	}
 
 }
