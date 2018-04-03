@@ -4,7 +4,7 @@
 
 void test() {
 
-	int a[NA], b[NB], c[NC]
+	int a[NA], b[NB], c[NC];
 
 	for (int i = 0; i < NC; ++i)
 	{
